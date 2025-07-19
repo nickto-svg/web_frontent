@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wed_frontent</title>
+    <style>
+        * {
+            margin:0px;
+        }
+        .class_1 {
+            width:100vw;
+            height:919px;
+            background:#444;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .class_2 {
+            width:600px;
+            height:918px;
+            background-image:url('class_5.jpg');
+            background-position:center;
+            background-size:cover;
+            border:5px groove black;
+            border-radius:20px;
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .class_3 {
+            width:340px;
+            height:905px;
+            border-radius:20px;
+        }
+        .class_4 {
+            width:340px;
+            height:50px;
+            border-radius:20px 20px 0px 0px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size:30px;
+            font-weight:bold;
+            font-style: italic;
+            color: aliceblue;
+            box-sizing: border-box;
+        }
+        .class_5 {
+            width:340px;
+            height:40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size:25px;
+            font-weight:bold;
+            font-style: italic;
+            color: rgb(255, 255, 255);
+            text-align: center;
+        }
+        .class_6 {
+            width: 340px;
+            height:180px;
+            display: flex;
+            align-items: center;
+            justify-content:space-evenly;
+        }
+        .class_7,
+        .class_8 {
+            width:150px;
+            height:150px;
+            border-radius:15px;
+            border:5px groove black;
+            box-sizing: border-box;
+        }
+        .class_7 {
+            background-position:center;
+            background-size: cover;
+            animation:15s linear  infinite class_7;
+        }
+        @keyframes class_7 {
+            0% {
+                background-image:url('data:image/jpeg;base64,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');
+            }
+            25% {
+                background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfLsVhq4ggezH6TXFoMdt2jgt8PPXChcD4vw&s');
+            }
+            50% {
+                background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyhgxASTxw3yneCuiVKjXRGSfsmr_U1nM8VQ&s');
+            }
+            75% {
+                background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTS-wawhf8N5IIDYbenAXKK9cRJia-yu0YDfw&s');
+            }
+            100% {
+                background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyV25a_42XwVNf7MzO1dPjeC_ttwM5pbkhaA&s');
+            }
+        }
+        .class_8 {
+            background-position:center;
+            background-size: cover;
+            animation:15s linear  infinite class_8;
+        }
+        @keyframes class_8 {
+            0% {
+                background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUtCatiTakA0HDuPH47FIkJvGpIDNR0s8E7g&s');
+            }
+            25% {
+                background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSebiXmtNJLXl6OBvw1IdNlXvLbUDF4r8zN-Q&s');
+            }
+            50% {
+                background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzU2nvYBqq3S7xKPhYjxYfDZgUp2WpJ-rTGQ&s');
+                background-position:right;
+            }
+            75% {
+                background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_ESF_h2fN0Ddo28dwfHmKL72Nk1-GigdjmQ&s');
+            }
+            100% {
+                background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQpm1L5TLB5SxpRZpe59oo6hMOF5XwWSLi1Q&s');
+            }
+        }
+        .class_9 {
+            width:340px;
+            height:150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .class_9_1 {
+            width:280px;
+            height:150px;
+            background:rgb(255, 255, 255);
+            border-radius:10px;
+            border:3px groove black;
+            box-sizing: border-box;
+            overflow-x: scroll;
+        }
+        pre {
+            font-family:'Times New Roman', Times, serif;
+        }
+        .class_9_1_1,
+        .class_9_1_2,
+        .class_9_1_3,
+        .class_9_1_4 {
+            width:320px;
+            height:32px;
+            font-size:20px;
+            font-weight:bold;
+            font-style: italic;
+            text-indent:10px;
+            display: flex;
+            align-items: center;
+        }
+        .class_10 {
+            width:340px;
+            height:70px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size:35px;
+            font-weight:bold;
+            font-style:italic;
+            color: aliceblue;
+        }
+        .class_11 {
+            width: 340px;
+            height:165px;
+            border-radius: 0px 0px 20px 20px;
+            display: grid;
+            grid-template-columns:repeat(2,140px);
+            grid-template-rows:repeat(2,70px);
+            grid-gap:5px;
+            grid-column-gap:20px;
+            grid-row-gap:10px;
+            align-content: center;
+            justify-content: center;
+        }
+        .class_11_1,
+        .class_11_2,
+        .class_11_3,
+        .class_11_4 {
+            width:140px;
+            height:70px;
+            background:green;
+            border-radius:10px;
+            border:3px groove black;
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size:35px;
+            font-weight:bold;
+            font-style: italic;
+            color: aliceblue;
+        }
+        a {
+            text-decoration:none;
+        }
+        .class_12 {
+            width:340px;
+            height:250px;
+            border-radius:0px 0px 20px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .class_13 {
+            width:300px;
+            height:170px;
+            background:rgba(68,68,68,.7);
+            border-radius:20px;
+            border:3px groove black;
+            box-sizing: border-box;
+            margin-top:25px;
+        }
+        .class_20 {
+            width:295px;
+            height:40px;
+            border-radius:20px 20px 0px 0px;
+            display: flex;
+            align-items: center;
+        }
+        .class_21 {
+            font-size:23px;
+            font-weight:bold;
+            font-style: italic;
+            color: aliceblue;
+            text-indent:10px;
+        }
+        .class_22 {
+            width:295;
+            height:40px;
+            border-radius:10px;
+            display: flex;
+            align-items: center;
+            font-size: 23px;
+            font-weight:bold;
+            font-style: italic;
+            color: aliceblue;
+            text-indent:10px;
+        }
+        .class_23 {
+            width:295px;
+            height:40px;
+            border-radius:10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size:23px;
+            font-weight:bold;
+            font-style:italic;
+            color: aliceblue;
+        }
+        .class_24 {
+            width:295px;
+            height:40px;
+            border-radius:10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            font-size:20px;
+            font-weight:bold;
+            font-style: italic;
+        }
+        a {
+            text-decoration:rgb(0, 94, 255) underline;
+            color: aliceblue;
+        }
+        a[href$="(5).html"],
+        a[href$="(6).html"] {
+            text-decoration:none;
+        }
+    </style>
+</head>
+<body>
+    <div class="class_1">
+        <div class="class_2">
+            <div class="class_3">
+                <div class="class_4">Вопрос № 1</div>
+                <div class="class_5">Как умер Пушкин ?</div>
+                <div class="class_6">
+                    <div class="class_7"></div>
+                    <div class="class_8"></div>
+                </div>
+                <div class="class_9">
+                    <div class="class_9_1">
+                        <div class="class_9_1_1"><pre>A.   умер от смертельного ранения   </pre></div>
+                        <hr>
+                        <div class="class_9_1_2"><pre>B.   умер от самоубийство</pre></div>
+                        <hr>
+                        <div class="class_9_1_3"><pre>D.   умер от старости</pre></div>
+                        <hr>
+                        <div class="class_9_1_4"><pre>C.   умер очень больно</pre></div>
+                        <hr>
+                    </div>
+                </div>
+                <div class="class_10">Выбирай</div>
+                <div class="class_11">
+                    <a href="index (5).html" target="_blank"><div class="class_11_1">A</div></a>
+                    <a href="index (5).html" target="_blank"><div class="class_11_2">B</div></a>
+                    <a href="index (5).html" target="_blank"><div class="class_11_3">D</div></a>
+                    <a href="index (6).html" target="_blank"><div class="class_11_4">C</div></a>
+                </div>
+                <div class="class_12">
+                    <div class="class_13">
+                        <div class="class_20">
+                            <div class="class_21">Номер разработчика</div>
+                        </div>
+                        <div class="class_22">+996 000 000</div>
+                        <div class="class_23">Делаем сайты Тг:😃</div>
+                        <div class="class_24"><a href="https://t.me/Denil_man" target="_blank">@Denil_man</a><a href="https://t.me/Diana_pages" target="_blank">@Diana_pages</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

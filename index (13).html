@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web_frontent</title>
+    <style>
+        * {
+            margin:0px;
+        }
+        .class_1 {
+            width:100vw;
+            height:919px;
+            background:#444;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .class_2 {
+            width:600px;
+            height:918px;
+            background-image:url('class_13.jpg');
+            background-position:center;
+            background-size:cover;
+            border:5px groove black;
+            border-radius:20px;
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .class_3 {
+            width:340px;
+            height:905px;
+            border-radius:20px;
+        }
+        .class_4 {
+            width:340px;
+            height:50px;
+            border-radius:20px 20px 0px 0px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size:30px;
+            font-weight:bold;
+            font-style: italic;
+            color: aliceblue;
+            box-sizing: border-box;
+        }
+        .class_5 {
+            width:340px;
+            height:40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size:25px;
+            font-weight:bold;
+            font-style: italic;
+            color: rgb(255, 255, 255);
+            text-align: center;
+        }
+        .class_6 {
+            width: 340px;
+            height:180px;
+            display: flex;
+            align-items: center;
+            justify-content:space-evenly;
+        }
+        .class_7,
+        .class_8 {
+            width:150px;
+            height:150px;
+            border-radius:15px;
+            border:5px groove black;
+            box-sizing: border-box;
+        }
+        .class_7 {
+            background-position:center;
+            background-size: cover;
+            background-image: url('class_12.png');
+        }
+        .class_8 {
+            background-position:center;
+            background-size:cover;
+            background-image:url('class_11.png');
+        }
+        .class_9 {
+            width:340px;
+            height:150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .class_9_1 {
+            width:280px;
+            height:150px;
+            background:rgb(255, 255, 255);
+            border-radius:10px;
+            border:3px groove black;
+            box-sizing: border-box;
+            overflow-x: scroll;
+        }
+        pre {
+            font-family:'Times New Roman', Times, serif;
+        }
+        .class_9_1_1,
+        .class_9_1_2,
+        .class_9_1_3,
+        .class_9_1_4 {
+            width:320px;
+            height:32px;
+            font-size:20px;
+            font-weight:bold;
+            font-style: italic;
+            text-indent:10px;
+            display: flex;
+            align-items: center;
+        }
+        .class_10 {
+            width:340px;
+            height:70px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size:35px;
+            font-weight:bold;
+            font-style:italic;
+            color: aliceblue;
+        }
+        .class_11 {
+            width: 340px;
+            height:165px;
+            border-radius: 0px 0px 20px 20px;
+            display: grid;
+            grid-template-columns:repeat(2,140px);
+            grid-template-rows:repeat(2,70px);
+            grid-gap:5px;
+            grid-column-gap:20px;
+            grid-row-gap:10px;
+            align-content: center;
+            justify-content: center;
+        }
+        .class_11_1,
+        .class_11_2,
+        .class_11_3,
+        .class_11_4 {
+            width:140px;
+            height:70px;
+            background:green;
+            border-radius:10px;
+            border:3px groove black;
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size:35px;
+            font-weight:bold;
+            font-style: italic;
+            color: aliceblue;
+        }
+        a {
+            text-decoration:none;
+        }
+        .class_12 {
+            width:340px;
+            height:250px;
+            border-radius:0px 0px 20px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .class_13 {
+            width:300px;
+            height:170px;
+            background:rgba(68,68,68,.7);
+            border-radius:20px;
+            border:3px groove black;
+            box-sizing: border-box;
+            margin-top:25px;
+        }
+        .class_20 {
+            width:295px;
+            height:40px;
+            border-radius:20px 20px 0px 0px;
+            display: flex;
+            align-items: center;
+        }
+        .class_21 {
+            font-size:23px;
+            font-weight:bold;
+            font-style: italic;
+            color: aliceblue;
+            text-indent:10px;
+        }
+        .class_22 {
+            width:295;
+            height:40px;
+            border-radius:10px;
+            display: flex;
+            align-items: center;
+            font-size: 23px;
+            font-weight:bold;
+            font-style: italic;
+            color: aliceblue;
+            text-indent:10px;
+        }
+        .class_23 {
+            width:295px;
+            height:40px;
+            border-radius:10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size:23px;
+            font-weight:bold;
+            font-style:italic;
+            color: aliceblue;
+        }
+        .class_24 {
+            width:295px;
+            height:40px;
+            border-radius:10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            font-size:20px;
+            font-weight:bold;
+            font-style: italic;
+        }
+        a {
+            text-decoration:rgb(0, 94, 255) underline;
+            color: aliceblue;
+        }
+        a[href$="(15).html"],
+        a[href$="(14).html"] {
+            text-decoration:none;
+        }
+    </style>
+</head>
+<body>
+    <div class="class_1">
+        <div class="class_2">
+            <div class="class_3">
+                <div class="class_4">Вопрос № 4</div>
+                <div class="class_5">Кто он ?</div>
+                <div class="class_6">
+                    <div class="class_7"></div>
+                    <div class="class_8"></div>
+                </div>
+                <div class="class_9">
+                    <div class="class_9_1">
+                        <div class="class_9_1_1"><pre>A.   Китаец</pre></div>
+                        <hr>
+                        <div class="class_9_1_2"><pre>B.   Монгол</pre></div>
+                        <hr>
+                        <div class="class_9_1_3"><pre>D.   Американец</pre></div>
+                        <hr>
+                        <div class="class_9_1_4"><pre>C.   Албанец</pre></div>
+                        <hr>
+                    </div>
+                </div>
+                <div class="class_10">Выбирай</div>
+                <div class="class_11">
+                    <a href="index (15).html" target="_blank"><div class="class_11_1">A</div></a>
+                    <a href="index (14).html" target="_blank"><div class="class_11_2">B</div></a>
+                    <a href="index (14).html" target="_blank"><div class="class_11_3">D</div></a>
+                    <a href="index (14).html" target="_blank"><div class="class_11_4">C</div></a>
+                </div>
+                <div class="class_12">
+                    <div class="class_13">
+                        <div class="class_20">
+                            <div class="class_21">Номер разработчика</div>
+                        </div>
+                        <div class="class_22">+996 000 000</div>
+                        <div class="class_23">Делаем сайты Тг:😃</div>
+                        <div class="class_24"><a href="https://t.me/Denil_man" target="_blank">@Denil_man</a><a href="https://t.me/Diana_pages" target="_blank">@Diana_pages</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
